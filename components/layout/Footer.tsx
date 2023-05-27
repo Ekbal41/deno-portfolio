@@ -5,7 +5,7 @@ export default function Footer() {
       >
         <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
           <div>
-            <p class=" text-dark tw-light">All Right Reserved 2023</p>
+            <p class=" text-dark tw-light mt-3">All Right Reserved 2023</p>
           </div>
           <div>
             <button
@@ -16,10 +16,10 @@ export default function Footer() {
                 style={{
                   width: "25px",
                 }}
-                src="https://upload.wikimedia.org/wikipedia/commons/8/84/Deno.svg"
-                class="me-1"
+                src="https://seeklogo.com/images/F/fresh-logo-F66F0FD377-seeklogo.com.png"
+                class="me-2"
               />
-              Made with <span class="fw-bold ms-1">Dano</span>
+              Made with <span class="fw-bold ms-1">Fresh</span>
             </button>
           </div>
           <div class="d-flex justify-content-between align-items-center gap-4">

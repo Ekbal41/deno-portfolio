@@ -9,7 +9,7 @@ export default function Intro() {
           </h2>
           <p class="fs-4 w-75 text-dark">
             A self-taught web developer with a passion for creating beautiful
-            and functional websites. I have a strong background in web
+            and functional websites.<br/> I have a strong background in web
             development and I am always looking to learn new technologies. I am
             currently looking for a full time position as a web developer.
           </p>
