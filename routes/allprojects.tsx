@@ -5,8 +5,7 @@ import Projects from "../islands/Projects.tsx";
 import Techs from "../islands/Techs.tsx";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
-
-export const handler :Handlers = {
+export const handler: Handlers = {
   async GET(_, ctx) {
     const url = "https://asifekbal.vercel.app/api/projects?id=4356786";
     const resp = await fetch(url);
@@ -18,50 +17,31 @@ export const handler :Handlers = {
   },
 };
 
-export default function Home({ data } :PageProps) {
+export default function AllProjects({ data }: PageProps) {
+  const reverseData = data.reverse();
 
-const reverseData = data.reverse();
-const firstfour = reverseData.slice(0, 4);
-const afterFirstFour = reverseData.slice(4, 8);
   return (
     <>
       <MainLayout>
         <Head>
           <title>Asif Ekbal</title>
         </Head>
+
         <div
-          class="container pt-3 pb-5"
+          class="bg-light "
           style={{
             fontFamily: "Helvetica Neue,Helvetica,Arial,sans-serif",
-            marginTop: "5.3rem",
-          }}
-        >
-          <Intro />
-        </div>
-        <div
-          class="bg-light mt-5 "
-          style={{
-            fontFamily: "Helvetica Neue,Helvetica,Arial,sans-serif",
+            marginTop: "5.5rem",
+
           }}
         >
           <Projects
             title={"Recent Works"}
             desc={"Some of my recent projects are listed here."}
-            items={firstfour}
+            items={reverseData}
           />
         </div>
-        <div
-          class=" mt-5 "
-          style={{
-            fontFamily: "Helvetica Neue,Helvetica,Arial,sans-serif",
-          }}
-        >
-          <Projects
-            title={"All Works"}
-            desc={"My all projects can be found in 'Project' page."}
-            items={afterFirstFour}
-          />
-        </div>
+
         <div
           class="bg-light mt-5 "
           style={{

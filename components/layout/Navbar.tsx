@@ -1,9 +1,9 @@
 export default function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-white bg-white py-4">
+      <nav class="navbar navbar-expand-lg navbar-white bg-white py-4 fixed-top">
         <div class="container">
-          <a class="navbar-brand fw-bold fs-4" href="#">/Ekbal41</a>
+          <a class="navbar-brand fw-bold fs-4" href="/">/Ekbal41</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -17,7 +17,7 @@ export default function Navbar() {
           </button>
           <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center gap-4">
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <i class="bi bi-moon fs-5"></i>
               </li>
               <li class="nav-item">
@@ -29,7 +29,19 @@ export default function Navbar() {
                   }}
                 >
                 </i>
-              </li>
+              </li> */}
+              <a 
+              href="/allprojects"
+              class="nav-item">
+                <i
+                  style={{
+                    fontSize: "1rem",
+                  
+                  }}
+                  class="bi bi-columns text-dark"
+                >
+                </i>
+              </a>
               <li class="nav-item">
                 <i
                   style={{

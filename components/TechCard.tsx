@@ -1,4 +1,9 @@
-export default function TechCard() {
+
+interface Props {
+  title: string;
+  img: string;
+}
+export default function TechCard({title,img } : Props) {
   return (
     <>
       <div class=" rounded-3 mb-5">
@@ -9,7 +14,7 @@ export default function TechCard() {
           }}
         >
           <img
-            src="https://i.postimg.cc/wjr9QgfD/note.jpg"
+            src={img}
             alt="project img"
             style={{
               width: "100%",
@@ -17,7 +22,7 @@ export default function TechCard() {
             class="rounded-3 border shadow-lg "
           />
           <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
-            <h3 class="fw-bold">Project Title</h3>
+            <h3 class="fw-bold">{title}</h3>
             <div
               style={{
                 cursor: "pointer",
