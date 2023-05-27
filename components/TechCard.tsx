@@ -1,11 +1,13 @@
-export default function ProjectCatd() {
+export default function TechCard() {
   return (
     <>
       <div class=" rounded-3 mb-5">
-        <div class="px-4 pt-4 pb-2 rounded-3 shadow-lg bg-white  "
-        style={{
-          border : "1px solid #e0e0e0"
-        }}>
+        <div
+          class="px-4 pt-4 pb-2 rounded-3 shadow-lg bg-white  "
+          style={{
+            border: "1px solid #e0e0e0",
+          }}
+        >
           <img
             src="https://i.postimg.cc/wjr9QgfD/note.jpg"
             alt="project img"
@@ -21,15 +23,8 @@ export default function ProjectCatd() {
                 cursor: "pointer",
               }}
             >
-              View Live <i class="bi bi-box-arrow-up-right"></i>
+              <i class="bi bi-box-arrow-up-right fw-bold"></i>
             </div>
-          </div>
-          <div>
-            <p class="text-dark fs-5">
-              A Job Board website for small startup. Cool Design and so much
-              more to come. laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit
-            </p>
           </div>
         </div>
       </div>
